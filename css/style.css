@@ -1,0 +1,598 @@
+/***********************Основные настройки*************************/
+body
+{
+	margin: 0;
+	padding: 0;
+	font-size: 12pt;
+	font-weight: 400;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3
+{
+	font-weight: 400;
+	color: #2D2D2D;
+}
+
+h2, h3, hr
+{
+	padding: 0px 0px 30px 0px;
+	margin: 0px;
+}
+
+p
+{
+	font-size: 20px;
+	line-height: 180%;
+	text-align: justify;
+}
+
+a
+{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+
+ul
+{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+h2
+{
+	font-size: 40px;
+}
+
+h3
+{
+	font-size: 30px;
+}
+
+hr
+{
+	border: none;
+	border-top: 1px solid #333;
+}
+
+header, nav, section, article, aside, footer { display:block; }
+
+/*************************Позиционирование*************************/
+.flex-column, .flex-start, .flex-space-between,
+.flex-end, .flex-center
+{
+	display: flex;
+}
+
+.flex-column
+{
+	flex-direction: column;
+}
+
+.flex-start
+{
+	justify-content: flex-start;
+}
+
+.flex-space-between
+{
+	justify-content: space-between;
+}
+
+.flex-end
+{
+	justify-content: flex-end;
+}
+
+.flex-center
+{
+	align-items: center;
+}
+
+/***********************Универсальные стили************************/
+/* Переход по текст-ссылкам */
+.links
+{
+	text-decoration: underline;
+	font-weight: 600;
+	color: red;
+}
+
+.links:hover
+{
+	color: blue;
+	text-decoration: none;
+}
+
+/* Кнопка покупки */
+.button-buy
+{
+	display: inline-block;
+	padding: 0em 1em;
+	background: #161616;
+	letter-spacing: 0.10em;
+	line-height: 3em;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1em;
+	color: #FFF;
+}
+
+.button-buy:hover
+{
+	background-color: white;
+	background-image: linear-gradient(to top, #FBAB7E, #F7CE68 30%);
+	color: black;
+	outline: 1px solid black;
+}
+
+/******************************Обертка*****************************/
+#wrapper
+{
+	margin: 0;
+	padding: 0;
+	background: #FFF;
+	color: rgba(0,0,0,0.8);
+}
+
+.container
+{
+	max-width: 1220px;
+	margin: 0px auto;
+}
+
+/*******************************Шапка******************************/
+#header-wrapper
+{
+	overflow: hidden;
+	background-color: #8EC5FC;
+	background-image: linear-gradient(to top, #FBAB7E, #F7CE68 40%);
+}
+
+#header
+{
+	height: 230px;
+}
+
+/*******************************Логотип****************************/
+#logo h1, #logo p, #logo img
+{
+	margin: 0;
+	padding: 0;
+	line-height: 100%;
+}
+
+#logo h1
+{
+	color: #FFF8E0;
+	letter-spacing: -1px;
+	font-size: 5.5em;
+	text-shadow: 2px 2px 1px #000;
+}
+
+#logo p
+{
+	letter-spacing: 0.05em;
+	font-size: 1em;
+	color: #161616;
+	text-align: center;
+}
+
+#logo img
+{
+	width: 10%;
+}
+
+.fa-vk, .fa-twitter, .fa-telegram
+{
+	background-color: white;
+	border-radius: 100%;
+}
+
+.fa-vk
+{
+	color: #0077FF;
+	padding: 6px 0px 6px 8px;
+}
+
+.fa-twitter
+{
+	color: #40ABE2;
+	padding: 7px 0px 6px 6px;
+}
+
+.fa-telegram
+{
+	color: #2AA8E7;
+	padding: 8px 0px 8px 8px;
+}
+
+.social-icons
+{
+	font-size: 35px;
+	letter-spacing: 8px;
+}
+
+.social-icons li
+{
+	display: inline-block;
+}
+
+.fa-vk:hover, .fa-twitter:hover, .fa-telegram:hover
+{
+	color: black;
+}
+
+/*************************Панель навигации*************************/
+#menu
+{
+	overflow: hidden;
+	background: #101010;
+}
+
+#menu ul
+{
+	line-height: normal;
+}
+
+#menu li
+{
+	display: inline-block;
+}
+
+#menu a
+{
+	display: block;
+	padding: 0px 40px 0px 40px;
+	line-height: 70px;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 200;
+	color: rgba(255,255,255,0.5);
+	border: none;
+}
+
+#menu a:hover
+{
+	background-color: white;
+	background-image: linear-gradient(to top, #FFBAD7, #F9DD94 70%);
+	color: black;
+	margin: 0px 2px 0px 2px;
+	font-weight: 400;
+}
+
+/*************************Основной контент*************************/
+#content-main
+{
+	overflow: hidden;
+	padding: 5em 0em;
+}
+
+/*************************Главная страница*************************/
+#main-info
+{
+	margin-right: 120px;
+}
+
+.guitar-spisok
+{
+	margin-top: 20px;
+}
+
+.guitar-spisok ul
+{
+	font-size: 20px;
+}
+
+.guitar-spisok li
+{
+	margin: 0px 0px 20px 0px;
+}
+
+.guitar-spisok h3
+{
+	padding-bottom: 40px;
+}
+
+.animate-grow
+{
+	width: 140px;
+	margin-top: 30px;
+	animation: animate_grow 3s infinite;
+}
+
+@keyframes animate_grow
+{
+	0%
+  {
+		transform: scale3d(1, 1, 1);
+	}
+	50%
+  {
+		transform: scale3d(1.15, 1.15, 1.15);
+	}
+	100%
+  {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+.small-info
+{
+	text-align: center;
+	font-size: 18px;
+}
+
+/***********************Информация о гитарах***********************/
+#guitar-info h2
+{
+	font-size: 27px;
+	text-align: center;
+}
+
+#guitar-info p
+{
+	font-size: 17px;
+}
+
+#guitar-info img
+{
+	display: block;
+	margin: 0 auto;
+}
+
+.guitar-block1 img
+{
+	width: 150px;
+}
+
+.guitar-block2 img
+{
+	width: 107.6px;
+}
+
+.guitar-block3 img
+{
+	width: 154px;
+}
+
+.guitar-block1, .guitar-block2
+{
+	margin-right: 40px;
+}
+
+.guitar-block1, .guitar-block2, .guitar-block3
+{
+	width: 260px;
+}
+
+/*******************************Прайс******************************/
+#price
+{
+	text-align: center;
+}
+
+#price h2
+{
+	font-size: 22px;
+}
+
+#price img
+{
+	display: block;
+	margin: 0 auto;
+}
+
+#price p
+{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 17px;
+	color: rgba(0,0,0,0.5);
+}
+
+.table-price
+{
+	margin-top: 70px;
+	text-align: center;
+}
+
+table.iksweb
+{
+	text-decoration: none;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table.iksweb th
+{
+	font-weight: bold;
+	font-size: 21px;
+	color: #ffffff;
+	background-color: #000000;
+}
+
+table.iksweb td
+{
+	font-size: 17px;
+	color: #000000;
+}
+
+table.iksweb a
+{
+	color: #000000;
+}
+
+table.iksweb a:hover
+{
+	color: white;
+}
+
+table.iksweb td,table.iksweb th
+{
+	white-space: pre-wrap;
+	padding: 10px 5px;
+	line-height: 13px;
+	vertical-align: middle;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+table.iksweb tr:hover
+{
+	background-image: linear-gradient(to top, #FBAB7E, #F7CE68 30%);
+}
+
+table.iksweb tr:hover a
+{
+	color: white;
+	font-weight: 800;
+	cursor: pointer;
+}
+
+table.iksweb tr:hover td
+{
+	color: white;
+}
+
+/*********************Информация о компании************************/
+#company-info
+{
+	margin-right: 120px
+}
+
+#company-info h3
+{
+	margin-top: 30px;
+}
+
+.map
+{
+  padding: 40px 0px 20px 0px;
+  text-align: center;
+}
+
+.content-map
+{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/*************************Правый сайдбар***************************/
+#sidebar-right
+{
+	width: 250px;
+	text-align: justify;
+}
+
+#sidebar-right h2
+{
+	font-size: 26px;
+}
+
+#sidebar-right h3
+{
+	font-size: 24px;
+	font-weight: 800;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+}
+
+#sidebar-right p
+{
+	font-size: 17px;
+}
+
+/* Блок с видео */
+#sidebar-right video
+{
+	width: 250px;
+}
+
+video::-webkit-media-controls-panel
+{
+  background-image: none !important;
+  filter: brightness(0.4);
+}
+
+/* Система поиска */
+.sidebar
+{
+	padding: 10px 0px 10px 0px;
+	margin: 0px 0px 16px 0px;
+}
+
+.sidebar h2
+{
+	padding: 0px 0px 0px 0px;
+}
+
+input[type="search"]
+{
+	color: #5D5D5D;
+	width: 70%;
+	padding: 11px;
+}
+
+.button
+{
+	color: black;
+	padding: 11px;
+}
+
+.button:hover
+{
+	background-image: linear-gradient(to top, #FBAB7E, #F7CE68 30%);
+	cursor: pointer;
+	color: white;
+}
+
+input
+{
+	outline: none;
+	border: none;
+	border: 1px solid black;
+}
+
+h1, h2
+{
+	padding: 15px 0px 5px 0px;
+	margin: 0px 0px 15px 0px;
+	color: #000;
+}
+
+h2
+{
+	font-size: 40px;
+}
+
+/*****************************Подвал*******************************/
+#footer
+{
+	width: 100%;
+	overflow: hidden;
+	background-color: #000000;
+	padding: 15px 0px;
+}
+
+#footer p
+{
+	font-size: 21px;
+	text-align: center;
+	color: white;
+}
+
+#footer a
+{
+	color: white;
+}
+
+#footer a:hover
+{
+	text-decoration: underline;
+	color: white;
+}
